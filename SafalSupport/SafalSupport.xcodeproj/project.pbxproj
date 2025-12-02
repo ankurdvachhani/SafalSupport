@@ -6,13 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1883366D2EA23D34005D49DF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1883366C2EA23D34005D49DF /* FirebaseAnalytics */; };
+		1883366F2EA23D34005D49DF /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1883366E2EA23D34005D49DF /* FirebaseAnalyticsCore */; };
+		188336712EA23D34005D49DF /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 188336702EA23D34005D49DF /* FirebaseAnalyticsIdentitySupport */; };
+		188336732EA23D34005D49DF /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 188336722EA23D34005D49DF /* FirebaseCore */; };
+		188336752EA23D34005D49DF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 188336742EA23D34005D49DF /* FirebaseCrashlytics */; };
+		188336772EA23D34005D49DF /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 188336762EA23D34005D49DF /* FirebaseInAppMessaging-Beta */; };
+		188336792EA23D34005D49DF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 188336782EA23D34005D49DF /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		183DFE4E2EA15C1900C1B235 /* SafalSupport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafalSupport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		184B3E712EA3B90200A769DF /* Exceptions for "SafalSupport" folder in "SafalSupport" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 183DFE4D2EA15C1900C1B235 /* SafalSupport */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		183DFE502EA15C1900C1B235 /* SafalSupport */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				184B3E712EA3B90200A769DF /* Exceptions for "SafalSupport" folder in "SafalSupport" target */,
+			);
 			path = SafalSupport;
 			sourceTree = "<group>";
 		};
@@ -23,6 +46,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1883366D2EA23D34005D49DF /* FirebaseAnalytics in Frameworks */,
+				1883366F2EA23D34005D49DF /* FirebaseAnalyticsCore in Frameworks */,
+				188336792EA23D34005D49DF /* FirebaseMessaging in Frameworks */,
+				188336752EA23D34005D49DF /* FirebaseCrashlytics in Frameworks */,
+				188336732EA23D34005D49DF /* FirebaseCore in Frameworks */,
+				188336712EA23D34005D49DF /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				188336772EA23D34005D49DF /* FirebaseInAppMessaging-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +95,13 @@
 			);
 			name = SafalSupport;
 			packageProductDependencies = (
+				1883366C2EA23D34005D49DF /* FirebaseAnalytics */,
+				1883366E2EA23D34005D49DF /* FirebaseAnalyticsCore */,
+				188336702EA23D34005D49DF /* FirebaseAnalyticsIdentitySupport */,
+				188336722EA23D34005D49DF /* FirebaseCore */,
+				188336742EA23D34005D49DF /* FirebaseCrashlytics */,
+				188336762EA23D34005D49DF /* FirebaseInAppMessaging-Beta */,
+				188336782EA23D34005D49DF /* FirebaseMessaging */,
 			);
 			productName = SafalSupport;
 			productReference = 183DFE4E2EA15C1900C1B235 /* SafalSupport.app */;
@@ -94,6 +131,9 @@
 			);
 			mainGroup = 183DFE452EA15C1900C1B235;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1883366B2EA23D34005D49DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 183DFE4F2EA15C1900C1B235 /* Products */;
 			projectDirPath = "";
@@ -251,16 +291,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SafalSupport/SafalSupport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U6656ZFCMG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafalSupport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafalSupport;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -279,16 +323,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SafalSupport/SafalSupport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U6656ZFCMG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafalSupport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafalSupport;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +372,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1883366B2EA23D34005D49DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1883366C2EA23D34005D49DF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1883366B2EA23D34005D49DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1883366E2EA23D34005D49DF /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1883366B2EA23D34005D49DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		188336702EA23D34005D49DF /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1883366B2EA23D34005D49DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		188336722EA23D34005D49DF /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1883366B2EA23D34005D49DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		188336742EA23D34005D49DF /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1883366B2EA23D34005D49DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		188336762EA23D34005D49DF /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1883366B2EA23D34005D49DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		188336782EA23D34005D49DF /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1883366B2EA23D34005D49DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 183DFE462EA15C1900C1B235 /* Project object */;
 }
